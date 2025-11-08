@@ -1,0 +1,79 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Petshop Amigo Animal - Agendamento</title>
+
+<body>
+
+    <header>
+        <h1>Petshop Amigo Animal</h1>
+        <p>Preencha os dados para agendar um serviço.</p>
+    </header>    
+
+    <main>
+        <h2>Formulário de Agendamento</h2>
+
+        <form action="#" method="POST">
+
+            <fieldset>
+                <legend>Dados do Proprietário</legend>
+
+                <label for="nome">Seu Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Seu E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}[0-9]{4,5}[0-9]{4}" placeholder="Ex: 51987654321"><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados do Pet e Serviço</legend>
+
+                <label for="pet_nome">Nome do Pet:</label><br>
+                <input type="text" id="pet_nome" name="pet_nome" required><br><br>
+
+                <label for="tipo_animal">Espécie:</label><br>
+                <!-- Exemplo de campo de seleção -->
+                <select id="tipo_animal" name="tipo_animal" required>
+                    <option value="">Selecione a espécie</option>
+                    <option value="cachorro">Cachorro</option>
+                    <option value="gato">Gato</option>
+                    <option value="outro">Outro</option>
+                </select><br><br>
+
+                <label for="servico">Serviço Desejado:</label><br>
+                <input type="radio" id="banho" name="servico" value="banho" checked>
+                <label for="banho">Banho Simples</label><br>
+
+                <input type="radio" id="tosa" name="servico" value="tosa">
+                <label for="tosa">Tosa Higiênica</label><br>
+
+                <input type="radio" id="consulta" name="servico" value="consulta">
+                <label for="consulta">Consulta Veterinária</label><br><br>
+
+                <label for="observacoes">Observações (opcional):</label><br>
+                <textarea id="observacoes" name="observacoes" rows="4"></textarea><br><br>
+            </fieldset>
+
+            <!-- O botão de submit envia o formulário (mas a ação será tratada na Fase 2) -->
+            <button type="submit">Enviar Agendamento</button>
+            <button type="reset">Limpar Formulário</button>
+
+        </form>
+        <nav>
+            <h3>Menu de Navegação</h3>
+            <ul>
+                <h2><li><a href="index.html">Início</a></li></h2>
+                <h2><li><a href="servicos.html">Nossos Serviços</a></li></h2>
+                <h2><li><a href="produtos.html">Nossos Produtos</a></li></h2>
+                <h2><li><a href="agendamento.html">Fazer Agendamento</a></li></h2>
+            </ul>
+        </nav>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Petshop Amigo Animal. Projeto Disciplina Fundamentos de Sistemas Web.</p>
+    </footer>
+
+
+</body>
